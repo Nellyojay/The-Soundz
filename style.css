@@ -285,7 +285,6 @@ footer{
 }
 
 .about-info{
-    border: solid red;
     display: flex;
     background-color: rgba(128, 128, 128, 0.132);
     color: rgba(255, 255, 255, 0.662);
