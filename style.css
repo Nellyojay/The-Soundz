@@ -1,0 +1,474 @@
+html{
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+}
+
+/* HOME */
+body{
+    background-image: linear-gradient(rgba(36, 34, 34, 0.758)), url(images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-top: 55px;
+}
+
+.index-header{
+    background-image: linear-gradient(rgba(62, 62, 62, 0.449)), url(images/stage\ design.png);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: inset 0 200px 300px rgb(72, 72, 72);
+    
+}
+
+.intro{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    font-size: larger;
+   
+    .s-logo{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* headers for the other pages */
+.other-headers{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223, 219, 219);
+    box-shadow: inset 10px 0 150px;
+    border-bottom: solid rgba(209, 5, 5, 0.466) 2px;
+    width: 100%;
+    
+    /* fixed when scroll */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* make sure it's on top */
+    background-color: rgba(223, 219, 219, 0.366);
+
+    .s-logo2{
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .nav-div{
+        margin: 5px;
+    }
+}
+
+.navigation{
+    display: flex;
+}
+
+.nav-div{
+    margin-top: 120px;
+    margin-right: 10px;
+}
+
+.navigation a{
+    background-color: rgba(255, 132, 0, 0.71);
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 10px rgb(2, 25, 31);
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a:hover{
+    background-color: rgba(180, 86, 3, 0.779);
+    box-shadow: inset -1px 1px 5px black;
+    color: white;
+    transform: scale(1.1);
+}
+
+.navigation a:active{
+    background-color: rgba(231, 145, 16, 0.745);
+}
+
+.welcome{
+    color: white;
+    text-align: center;
+    margin: 273px 100px 0 100px;
+    font-size: 1.6rem;
+    background-color: rgba(82, 82, 82, 0.819);
+    padding: 10px;
+    border-radius: 1000px 1000px 0 0;
+    box-shadow: 1px 0 40px black;
+}
+
+.introP{
+    background-color: rgba(210, 207, 207, 0.67);
+    box-shadow: 1px 5px 10px rgb(86, 85, 85);
+    padding: 30px;
+    border-radius: 0 0 50px 0;
+    margin: 40px 500px 50px 20px;
+    text-align: center;
+
+}
+
+.introP, .why-choose-us{
+    transition: all 0.3s ease-in-out;
+} 
+
+.introP:hover{
+    border-radius: 0 0 0 0;
+    background-color: rgb(167, 164, 164);
+    transform: scale(1.01);
+}
+
+.why-choose-us{
+    background-color: rgba(210, 207, 207, 0.67);
+    box-shadow: 1px 5px 10px rgb(79, 78, 78);
+    padding: 20px;
+    border-radius: 50px 0 0 0;
+    margin: -90px 20px 50px 500px;
+    text-align: center;
+    
+}
+
+.why-choose-us:hover{
+    border-radius: 0 0 0 0;
+    background-color: rgb(167, 164, 164);
+    transform: scale(1.01);
+}
+
+/* OUR SERVICES */
+.service-preview{
+    padding: 5px;
+    margin: 10px 200px 10px 200px;
+    background-color: rgba(180, 86, 3, 0.152);
+    text-align: center;
+
+    h3{
+        color: rgba(210, 207, 207, 0.768);
+    }
+}
+
+.preview{
+    color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin: 20px;
+    background-color: rgba(210, 207, 207, 0.67);
+    
+
+    img{
+        width: 50%;
+        height: 100%;
+        border-radius: 0 90px 0 90px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 5px 5px 30px 5px rgba(106, 53, 7, 0.756);
+    }
+
+    p{
+        padding: 80px;
+        text-align: center;
+    
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.667);
+            padding: 2px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover{
+            color: rgb(111, 58, 12);
+            
+        }
+    }
+
+    img:hover{
+        transform: scale(1.03);
+        border-radius: 10px 90px 10px 90px;
+        box-shadow: -2px 1px 10px black;
+        z-index: 1;
+    }
+}
+
+footer{
+    background-color: rgba(180, 86, 3, 0.779);
+    color: rgb(184, 180, 180);
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    border-top: solid rgb(209, 5, 5) 2px;
+
+    .line{
+        background-color: rgba(62, 2, 2, 0.329);
+        padding: 1.2px;
+        margin: 10px;
+    }
+}
+
+.footer1{
+    margin: -35px 0 0 0;
+    padding: 50px;
+}
+
+/* SERVICES */
+.content{
+    margin: 30px;
+    width: auto;
+    height: 550px;
+    display: flex;
+    background-color: rgba(180, 86, 3, 0.152);
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.content-text{
+    margin: 10px;
+    padding: 30px;
+    max-width: 650px;
+    background-color: rgba(128, 128, 128, 0.216);
+    box-shadow: 1px 1px 10px black;
+    overflow: hidden;
+}
+
+.content-image{
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px;
+    grid-template-rows: 135.5px 135.5px 135.5px 135.5px;
+    width: 700px;
+    height: 546px;
+    margin-top: 4px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in-out;
+        border-radius: 10px;
+        border: solid 4px rgba(0, 0, 0, 0.571);
+    }
+
+    .img-1{
+        grid-area: 1/1/3/3;
+    }
+    .img-1:hover{
+        transform: scale(1.2);
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .img-2{
+        grid-area: 1/3/3/5;
+    }.img-2:hover{
+        transform: scale(1.2);
+        box-shadow: -10px 10px 20px black;
+    }
+
+    .img-3{
+        grid-area: 3/1/5/3;
+    }
+    .img-3:hover{
+        transform: scale(1.2);
+        box-shadow: 10px -10px 20px black;
+    }
+
+    .img-4{
+        grid-area: 3/3/5/5;
+    }
+    .img-4:hover{
+        transform: scale(1.2);
+        box-shadow: -10px -10px 20px black;
+    }
+}
+
+.about-info{
+    border: solid red;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.132);
+    color: rgba(255, 255, 255, 0.662);
+
+    img{
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+    .boss-info{
+        padding-top: 20px;
+        max-width: 400px;
+    }
+
+}
+
+/* maxwidth 1070px */
+@media screen and (max-width:1070px) {
+
+    .index-header{
+
+        .s-logo{
+            margin-left: 30px;
+        }
+
+        .nav-div{
+            margin: -10px 0 0 0;
+
+            a{
+                color: white;
+                background-color: rgb(190, 100, 5);
+                transition: 0.3s ease-in-out;
+                font-size: 1rem;
+                padding-right: 5px;
+            }
+        } 
+    }
+
+    .other-headers{
+        .nav-div{
+            color: white;
+            
+            .navigation{
+                margin-top: 5px;
+            }
+            
+            a{
+                color: white;
+                font-size: .6rem;
+            }
+        }
+    }
+    
+
+    .intro{
+        display: block;
+    }
+
+    .service-preview{
+        margin: 20px;
+        justify-content: none;
+
+        .preview{
+            padding: 5px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                margin: 0 0 0 -100px;
+                border-radius: 0 0 0 0;
+            }
+
+            p{
+                padding: 10px;
+                z-index: 1;
+                background-color: rgba(181, 177, 177, 0.899);
+                margin: 0 -40px 0 0 ;
+            }
+        }
+    }
+
+    .introP{
+        margin: 20px;
+        border-radius: 0 0 0 0;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .why-choose-us{
+        margin: 20px;
+        border-radius: 0 0 0 0;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .welcome{
+        margin: 250px 0 0 0;
+        font-size: 1.3rem;
+        border-radius: 0 0 0 0;
+    }
+
+    /* SERVICES */
+    .content{
+        display: block;
+        width: auto;
+        height: 830px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 0 0 10px 10px ;
+    }
+
+    .content-text{
+        padding: 10px;
+        max-width: 800px;
+        height: 460px;
+    }
+
+    .content-image{
+        width: 100%;
+        height: 40%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25% 25% 25%;
+
+        img{
+            border: none;
+            box-shadow: -1px 10px 10px black;
+        }
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+
+        h2{
+            font-size: 1.3rem; 
+        }
+
+        .line{
+            margin: 0;
+        }
+    }
+}
+
+/* Maxwidth 600px */
+@media screen  and (max-width:600px) {
+    
+    .other-headers{
+        width: 384px;
+    }
+
+    /* SERVICES */
+    .content{
+        display: block;
+        width: auto;
+        height: 830px;
+        padding: 6px;
+        background-color: rgba(0, 0, 0, 0.345);
+        border-radius: 0 0 10px 10px ;
+    }
+
+    .content-text{
+        padding: 10px;
+        max-width: 800px;
+        height: 460px;
+    }
+
+    .content-image{
+        width: 300px;
+        height: 327px;
+        display: grid;
+        grid-template-columns: 78px 78px 78px 78px 78px 78px;
+        grid-template-rows: 81.75px 81.75px 81.75px 81.75px 81.75px 81.75px;
+
+        img{
+            border: none;
+            box-shadow: -1px 10px 10px black;
+        }
+    }
+
+    .about-info{
+        display: block;
+        
+        .boss-info{
+            margin: -50px 20px 20px 20px;
+        }
+    }
+}
